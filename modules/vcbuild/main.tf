@@ -1,3 +1,5 @@
+### vcbuild/main.tf ##
+
 variable "vcentername" {
   description = "vcenter name"
   default = "myvcenter"

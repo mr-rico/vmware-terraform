@@ -1,3 +1,5 @@
+### vcconfig/main.tf ###
+
 variable "vchostname" {
   description = "vcenter server"
   default = "vcsa.mydomain.lab"
