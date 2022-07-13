@@ -1,6 +1,7 @@
 # Local .terraform directories
 **/.terraform/*
-#test
+
+**/VMware-VCSA-all-6.7.0-15132721/*
 
 # .tfstate files
 *.tfstate
