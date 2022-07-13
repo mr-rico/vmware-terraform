@@ -59,6 +59,6 @@ resource "local_file" "foo" {
 
 resource "null_resource" "vc" {
   provisioner "local-exec" {
-    command = "/home/rico/vmware/modules/vcbuild/VMware-VCSA-all-6.7.0-15132721/vcsa-cli-installer/lin64/vcsa-deploy install --accept-eula --acknowledge-ceip --terse --no-ssl-certificate-verification ./vctemplate.json"
+    command = "/home/rico/vmware-terraform/modules/vcbuild/VMware-VCSA-all-6.7.0-15132721/vcsa-cli-installer/lin64/vcsa-deploy install --accept-eula --acknowledge-ceip --terse --no-ssl-certificate-verification ./vctemplate.json"
   }
 }
