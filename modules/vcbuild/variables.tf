@@ -2,27 +2,27 @@
 
 variable "vcentername" {
   description = "vcenter name"
-  default = "myvcenter"
+  default = "vcenter_name_here"
 }
 
 variable "vcpassword" {
   description = "vcpassword"
-  default = "Password#123!@#"
+  default = "vc_password_here"
 }
 
 variable "esxipassword" {
   description = "esxi password"
-  default = "Pa55w0rd999!"
+  default = "esxi_password_here"
 }
 
 variable "vcip" {
   description = "ip address"
-  default = "192.168.1.100"
+  default = "vc_ip_here"
 }
 
 variable "dnsserver" {
   description = "dns server"
-  default = "192.168.1.101"
+  default = "dns_server_here"
 }
 
 variable "ipprefix" {
@@ -32,10 +32,10 @@ variable "ipprefix" {
 
 variable "gateway" {
   description = "gateway"
-  default = "192.168.1.1"
+  default = "gwy_here"
 }
 
 variable "vchostname" {
   description = "vc hostname"
-  default = "mycenter.mydomain.lab"
+  default = "vc_fqdn"
 }
