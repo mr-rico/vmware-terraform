@@ -1,6 +1,7 @@
 # Local .terraform directories
 **/.terraform/*
 
+# Ignore esx installation directories
 **/VMware-VCSA-all-6.7.0-15132721/*
 
 # .tfstate files
