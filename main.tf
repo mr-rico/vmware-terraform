@@ -4,7 +4,9 @@ module "vcbuild" {
    source = "./modules/vcbuild"
    }
 
-#module "vcconfig" {
-#   source = "./modules/vcconfig"
-#   #vcconfig_depends_on = [module.vcbuild.vcsa_build]
-#   }
+/*
+module "vcconfig" {
+   source = "./modules/vcconfig"
+   #depends_on = [module.vcbuild.null_resource]
+   }
+*/

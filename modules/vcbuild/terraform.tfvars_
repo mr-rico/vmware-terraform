@@ -1,6 +1,6 @@
 ### vcbuild/terraform.tfvars ##
 
-vcentername = "myvcenter"
+vcentername = "vcenter2"
 
 vcpassword = "Password#123!@#"
 

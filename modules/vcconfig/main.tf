@@ -1,12 +1,12 @@
 ### vcconfig/main.tf ###
 
-provider "vsphere" {
-  vsphere_server = "${var.vchostname}"
-  user           = "${var.vcuser}"
-  password       = "${var.vcpassword}"
-   # If you have a self-signed cert
-  allow_unverified_ssl = true
-}
+#provider "vsphere" {
+#  vsphere_server = "${var.vchostname}"
+#  user           = "${var.vcuser}"
+#  password       = "${var.vcpassword}"
+#   # If you have a self-signed cert
+#  allow_unverified_ssl = true
+#}
 
 resource "vsphere_datacenter" "dc" {
   name       = "${var.datacenter}"

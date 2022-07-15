@@ -1,41 +1,47 @@
 ### vcbuild/variables.tf ##
 
-variable "vcentername" {
-  description = "vcenter name"
-  default = "vcenter_name_here"
+variable "esx_hostname" {
+  description = "esx host name"
+  default = "esxi-1"
 }
 
-variable "vcpassword" {
-  description = "vcpassword"
-  default = "vc_password_here"
+variable "esx_username" {
+  description = "esx user name"
+  default = "root"
 }
 
-variable "esxipassword" {
-  description = "esxi password"
-  default = "esxi_password_here"
+variable "esx_password" {
+  description = "esx password"
+  default = "Password#1!"
 }
 
-variable "vcip" {
-  description = "ip address"
-  default = "vc_ip_here"
+variable "esx_network" {
+  description = "esx network"
+  default = "VM Network"
 }
 
-variable "dnsserver" {
-  description = "dns server"
-  default = "dns_server_here"
+variable "esx_datastore" {
+  description = "esx datastore"
+  default = "datastore1"
 }
 
-variable "ipprefix" {
-  description = "prefix"
-  default = "24"
+variable "vc_name" {
+  description = "vcsa virtual machine name"
+  default = "vcsa"
 }
 
-variable "gateway" {
-  description = "gateway"
-  default = "gwy_here"
+variable "vc_ip" {
+  description = "vcsa ip address"
+  default = "172.16.163.100"
 }
 
-variable "vchostname" {
-  description = "vc hostname"
-  default = "vc_fqdn"
+variable "vc_fqdn" {
+  description = "vcsa fqdn"
+  default = "vcsa.mydomain.lab"
 }
+
+variable "vc_password" {
+  description = "vcsa password"
+  default = "Password#123!@#"
+}
+

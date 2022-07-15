@@ -3,11 +3,11 @@
     "__comments": "Sample template to deploy a vCenter Server Appliance with an embedded Platform Services Controller on an ESXi host.",
     "new_vcsa": {
         "esxi": {
-            "hostname": "esxi-1.mydomain.lab",
-            "username": "root",
-            "password": "Password#1!",
-            "deployment_network": "VM Network",
-            "datastore": "datastore1"
+            "hostname": "${esx_hostname}",
+            "username": "${esx_username}",
+            "password": "${esx_password}",
+            "deployment_network": "${esx_network}",
+            "datastore": "${esx_datastore}"
         },
         "appliance": {
             "__comments": [
@@ -15,26 +15,26 @@
             ],
             "thin_disk_mode": true,
             "deployment_option": "small",
-            "name": "vcenter"
+            "name": "${vc_name}"
         },
         "network": {
             "ip_family": "ipv4",
             "mode": "static",
-            "ip": "172.16.163.100",
+            "ip": "${vc_ip}",
             "dns_servers": [
                 "172.16.163.10"
             ],
             "prefix": "24",
             "gateway": "172.16.163.2",
-            "system_name": "vcsa.mydomain.lab"
+            "system_name": "${vc_fqdn}"
             },
         "os": {
-            "password": "Password#123!@#",
+            "password": "${vc_password}",
             "ntp_servers": "time.nist.gov",
             "ssh_enable": true
         },
         "sso": {
-            "password": "Password#123!@#",
+            "password": "${vc_password}",
             "domain_name": "vsphere.local"
         }
     },

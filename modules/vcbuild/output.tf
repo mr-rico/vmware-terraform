@@ -1,6 +1,3 @@
-output vcsa_build {
-  value       = ""
-  sensitive   = true
-  description = "description"
-  depends_on  = [null_resource.vc]
+output local_file_vc {
+  value       = local_file.vc #null_resource.vc
 }
